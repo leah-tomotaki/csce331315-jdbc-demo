@@ -67,6 +67,10 @@ public class jdbcpostgreSQL {
        System.out.println("--------------------Query Results--------------------");
        while (result.next()) {
         System.out.println(result.getString("<COLUMN 1 NAME>") + " " + result.getString("<COLUMN 2 NAME>"));
+        
+        // Use this to the print the results of a COUNT query
+        // System.out.println(result.getInt(1));
+
        }
        //OR
        // This is just the ResultSet Object and memory location <-- Not helpful 
