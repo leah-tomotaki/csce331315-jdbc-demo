@@ -3,8 +3,8 @@ import java.sql.*;
 import javax.naming.spi.DirStateFactory.Result;
 
 /*
-CSCE 315
-9-27-2021 Lab
+CSCE 315/331
+10/2 Lab
  */
 public class jdbcpostgreSQL {
 
@@ -20,7 +20,7 @@ public class jdbcpostgreSQL {
 
     //Building the connection with your credentials
     Connection conn = null;
-    String teamName = "<ADD TEAM NAME HERE>"
+    String teamName = "<ADD TEAM NAME HERE>";
     String dbName = "csce315331_"+teamName+"_db";
     String dbConnectionString = "jdbc:postgresql://csce-315-db.engr.tamu.edu/" + dbName;
     dbSetup myCredentials = new dbSetup(); 
